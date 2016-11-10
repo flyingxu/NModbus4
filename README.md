@@ -1,3 +1,18 @@
+NModbus4-PCL
+=======
+
+Original NModbus4 is a `netstandard1.3` project, which makes it difficult to be referenced by other PCL libraries.
+
+By extracting some PLC files and recreate a NModbus4-Pcl project, the assembly can then be referenced by legacy PCL projects.
+
+Some TcpClient/UdpClient (I guess this is the reason why NModbus4 is a `netstandard1.3` project) files are not included in the NModbus4-Pcl project, because they are not needed for Modbus RTU application.
+
+No source files are modified, just a new project type with a part of existing source files.
+
+
+
+
+
 NModbus4
 =======
 
